@@ -2,6 +2,8 @@
 import csv
 import os
 
+print("Test")
+
 # Assign a variable for the file to load and the path
 file_to_load = os.path.join("Resources", "election_results.csv")
 
