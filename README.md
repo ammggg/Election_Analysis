@@ -15,7 +15,7 @@ A Colorado Board of Elections employee has tasked me with the following in order
 
 ## Election Audit Results
 The analysis shows that:
-- There were X votes cast in this election.
+- There were 369,711 votes cast in this election.
 - County Results:
     - Jefferson County accounted for 10.5% of the vote and 38,855 number of votes.
     - Denver County accounted for 82.8% of the vote and 306,055 number of votes.
