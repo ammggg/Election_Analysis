@@ -5,7 +5,7 @@ A Colorado Board of Elections employee has tasked me with the following in order
 
 1. Calculate the total number of votes cast.
 2. Calculate a summary based on county.
-3. Calculate the total number of cotes each candidate received.
+3. Calculate the total number of votes each candidate received.
 4. Calculate the percentage of votes each candidate won.
 5. Determine the winner of the election based on popular vote.
 
@@ -32,4 +32,12 @@ The analysis shows that:
 ## Election Audit Summary
 In conclusion, this has been a full and complete audit of the local congressional election which shows that Diana DeGette won the popular vote.
 
-Going foward, this script can be useful in auditing any Colorado election, with some modifications. Currently, this code is set up to handle any number of candidates/reporting counties, with the assumption that the headers provided in the CSV file will not change - for example, the code is indexed to the current location for County and Candidate. Additionally, if additional data were to be provided, such as sex, age, or perhaps level of education, you would need to modify the code further in order to incorporate and analyze this data. 
+Going foward, this script can be useful in auditing any Colorado election, with some modifications. Currently, this code is set up to handle any number of candidates/reporting counties, with the assumption that the headers provided in the CSV file will not change - for example, the code is indexed to the current location for County and Candidate. Below is the specific lines of code tha relate to this indexing, beginning in row 48 of the script:
+
+        # Get the candidate name from each row.
+        candidate_name = row[2]
+
+        # 3: Extract the county name from each row.
+        county_name = row[1]
+
+Additionally, if additional data were to be provided, such as sex, age, or perhaps level of education, you would need to modify the code further in order to incorporate and analyze this data. 
